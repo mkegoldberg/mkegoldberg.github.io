@@ -1,16 +1,4 @@
 /* Styles for Bio site */
-/* 
-    TODO: 
-    Make date and dash lines red
-    Use <header tag>
-    Use <main>
-    external link
-    img captions
-    translate symbols
-    more visual transition for links
-    animate yellow line under links
-    animation for images on hover
-*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -38,10 +26,6 @@ h2 {
 a {
     color: #cf1328;
 }
-/* a:hover {
-    color: #e8522e;
-    transition: color 0.2s ease-out;
-} */
 a:visited, 
 a:active {
     color: #cf1328;
@@ -57,7 +41,6 @@ a:active {
 .hover-line:hover {
     background-size: 100% 4px;
 }
-
 footer {
     background: #aeaeae;
     color: #fff;
@@ -153,36 +136,39 @@ footer {
 }
 
 /* animations */
-.grow { transition: all .3s ease-in-out; }
+.grow { 
+    transition: all .3s ease-in-out;
+}
 .grow:hover { 
     transform: scale(1.1);
     box-shadow: 9px 14px 32px -13px rgba(0,0,0,0.64);
 }
 
 /* Small only */
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 624px) {
+    body {
+        font-size: 22px;
+    }
+    .main-nav {
+        font-size: 1.75rem;
+        text-align: center;
+        width: 75%;
+    }
     .title-area .row {
         flex-direction: column-reverse;
+        text-align: center;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+    #images .container {
+        display: block;
+    }
+    #images .container img {
+        width: 100%;
+        max-width: 100%;
     }
 }
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
-
-
-
