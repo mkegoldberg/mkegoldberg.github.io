@@ -62,8 +62,7 @@ footer {
     height: 400px;
     position: relative;
 }
-.bg-pink {
-    /* TODO: find a soft red */
+.bg-gray-lt {
     background-color: #eee;
 }
 .bg-gray {
