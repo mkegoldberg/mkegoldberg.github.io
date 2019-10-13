@@ -1,0 +1,188 @@
+/* Styles for Bio site */
+/* 
+    TODO: 
+    Make date and dash lines red
+    Use <header tag>
+    Use <main>
+    external link
+    img captions
+    translate symbols
+    more visual transition for links
+    animate yellow line under links
+    animation for images on hover
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+}
+h1,
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #777;
+    margin-top: 0;
+}
+a {
+    color: #cf1328;
+}
+/* a:hover {
+    color: #e8522e;
+    transition: color 0.2s ease-out;
+} */
+a:visited, 
+a:active {
+    color: #cf1328;
+}
+.hover-line {
+    background-image: linear-gradient(#ffdd9e,#ffdd9e);
+    background-position: center 84%;
+    background-repeat: no-repeat;
+    background-size: 0 4px;
+    transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-webkit-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-moz-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
+    padding: 2px 0;
+}
+.hover-line:hover {
+    background-size: 100% 4px;
+}
+
+footer {
+    background: #aeaeae;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+.section {
+    padding: 4rem 2rem;
+}
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.hero {
+    background-color: #aeaeae;
+    background-image: url('img/bg-hero.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.bg-pink {
+    /* TODO: find a soft red */
+    background-color: #eee;
+}
+.bg-gray {
+    /* TODO: find a soft red */
+    background-color: #aeaeae;
+}
+.img-round {
+    max-width: 300px;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.img-symbol {
+    width: 48px;
+    height: auto;
+    margin-bottom:.75rem; 
+}
+
+.main-nav {
+    position: fixed;
+    z-index: 10;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, .7);
+    padding: 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.main-nav ul {
+    padding: 0;
+}
+.main-nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+.main-nav li a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.title-area .row {
+    display: flex;
+    justify-content: space-around;
+}
+#timeline .container {
+    text-align: center;
+}
+#images .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#images .container img {
+    margin: .45rem;
+    max-width: 300px;
+    height: auto;
+}
+.bodyText {
+    text-align: center;
+}
+.bodyText figcaption {
+    color: #cf291d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    font-weight: 700;
+}
+.bodyText p {
+    text-align: left;
+}
+
+/* animations */
+.grow { transition: all .3s ease-in-out; }
+.grow:hover { 
+    transform: scale(1.1);
+    box-shadow: 9px 14px 32px -13px rgba(0,0,0,0.64);
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .title-area .row {
+        flex-direction: column-reverse;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
