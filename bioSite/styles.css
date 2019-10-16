@@ -168,6 +168,10 @@ footer {
     .hero {
         height: 350px;
     }
+    #images .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
     #images .container img {
         max-width: 100%;
     }
