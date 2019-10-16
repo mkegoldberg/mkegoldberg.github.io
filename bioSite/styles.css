@@ -173,6 +173,7 @@ footer {
         flex-wrap: nowrap;
     }
     #images .container img {
+        width: 100%;
         max-width: 100%;
     }
     footer {
