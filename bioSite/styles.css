@@ -35,15 +35,15 @@ a:active {
     color: #cf1328;
 }
 .hover-line {
-    background-image: linear-gradient(#ffdd9e,#ffdd9e);
+    background-image: linear-gradient(#fbc403,#fbc403);
     background-position: center 84%;
     background-repeat: no-repeat;
-    background-size: 0 4px;
+    background-size: 0 5px;
     transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-webkit-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-moz-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
     padding: 2px 0;
 }
 .hover-line:hover {
-    background-size: 100% 4px;
+    background-size: 100% 5px;
 }
 footer {
     background: #aeaeae;
