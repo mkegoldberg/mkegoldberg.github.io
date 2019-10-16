@@ -169,8 +169,7 @@ footer {
         height: 350px;
     }
     #images .container img {
-        width: 100%;
-        max-width: 100%
+        max-width: 100%;
     }
     footer {
         font-size: 1rem;
