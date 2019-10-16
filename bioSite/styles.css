@@ -152,26 +152,23 @@ footer {
     body {
         font-size: 22px;
     }
+    .section {
+        padding: 4rem 1rem;
+    }
     .main-nav {
-        font-size: 1.75rem;
+        font-size: 1rem;
         text-align: center;
-        width: 90%;
+        width: 100%;
+        padding: 0 10px;
     }
     .title-area .row {
         flex-direction: column-reverse;
         text-align: center;
     }
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 4rem;
-    }
-    #images .container {
-        display: block;
+    .hero {
+        height: 350px;
     }
     #images .container img {
         width: 100%;
-        max-width: 100%;
     }
 }
