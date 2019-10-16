@@ -93,6 +93,7 @@ footer {
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, .7);
     padding: 0 20px;
+    text-align: center;
     border-radius: 4px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -157,7 +158,6 @@ footer {
     }
     .main-nav {
         font-size: 1rem;
-        text-align: center;
         width: 100%;
         padding: 0 10px;
     }
@@ -170,5 +170,15 @@ footer {
     }
     #images .container img {
         width: 100%;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 625px) and (max-width: 1023px){
+    .main-nav {
+        width: 55%;
     }
 }
