@@ -1,5 +1,6 @@
 /* Styles for Bio site */
 
+/* Base Elements */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -34,17 +35,8 @@ a:visited,
 a:active {
     color: #cf1328;
 }
-.hover-line {
-    background-image: linear-gradient(#fbc403,#fbc403);
-    background-position: center 84%;
-    background-repeat: no-repeat;
-    background-size: 0 5px;
-    transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-webkit-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-moz-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
-    padding: 2px 0;
-}
-.hover-line:hover {
-    background-size: 100% 5px;
-}
+
+/* Group Elements */
 footer {
     background: #aeaeae;
     color: #fff;
@@ -70,7 +62,6 @@ footer {
     background-color: #eee;
 }
 .bg-gray {
-    /* TODO: find a soft red */
     background-color: #aeaeae;
 }
 .img-round {
@@ -96,6 +87,8 @@ footer {
     text-align: center;
     border-radius: 4px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    animation: fade-in-bottom ease-out .8s forwards;
 }
 .main-nav ul {
     padding: 0;
@@ -111,6 +104,15 @@ footer {
 .title-area .row {
     display: flex;
     justify-content: space-around;
+}
+.title-area h1,
+.title-area h2 {
+    opacity: 0;
+    animation: fade-in-right ease-out .8s forwards;
+}
+.title-area img {
+    opacity: 0;
+    animation: fade-in-left ease-out .8s forwards; 
 }
 #timeline .container {
     text-align: center;
@@ -139,7 +141,8 @@ footer {
     text-align: left;
 }
 
-/* animations */
+/**** ANIMATIONS ****/
+/* enlarge an element on hover */
 .grow { 
     transition: all .3s ease-in-out;
 }
@@ -147,7 +150,54 @@ footer {
     transform: scale(1.1);
     box-shadow: 9px 14px 32px -13px rgba(0,0,0,0.64);
 }
+/* animate a underline on hover */
+.hover-line {
+    background-image: linear-gradient(#fbc403,#fbc403);
+    background-position: center 84%;
+    background-repeat: no-repeat;
+    background-size: 0 5px;
+    transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-webkit-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s,-moz-background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
+    padding: 2px 0;
+}
+.hover-line:hover {
+    background-size: 100% 5px;
+}
+/* fade in from left to right on page load */
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* fade in from right to left on page load */
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* fade in from top to bottom on page load */
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
 
+
+/**** MOBILE AND TABLET STYLES ****/
 /* Small only */
 @media screen and (max-width: 624px) {
     body {
