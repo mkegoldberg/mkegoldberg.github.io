@@ -287,7 +287,6 @@ footer {
   }
 }
 
-
 /**** MOBILE AND TABLET STYLES ****/
 /* Small only */
 @media screen and (max-width: 624px) {
@@ -349,7 +348,7 @@ footer {
     }
 }
 
-/* Medium only */
+/* Tablet only */
 @media screen and (min-width: 625px) and (max-width: 1023px){
     .main-nav {
         width: 55%;
