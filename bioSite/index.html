@@ -16,18 +16,25 @@
 <body>
     <header class="hero">
         <div class="main-nav">
+            <script>
+                // TODO: make scroll function work
+                function goTo(section) {
+                    console.log(document.getElementById(section));
+                    document.getElementById(section).scrollIntoView({ block: 'start', behavior: 'smooth' });
+                }
+            </script>
             <ul>
                 <li>
-                    <a href="#bio"><span class="hover-line">Bio</span></a>
+                    <a class="nav-link" onclick="goTo('timelineAlt')"><span class="hover-line">Timeline</span></a>
                 </li>
                 <li>
-                    <a href="#timelineAlt"><span class="hover-line">Timeline</span></a>
+                    <a class="nav-link" onclick="goTo('bio')"><span class="hover-line">Bio</span></a>
                 </li>
                 <li>
-                    <a href="#images"><span class="hover-line">Images</span></a>
+                    <a class="nav-link" onclick="goTo('images')"><span class="hover-line">Images</span></a>
                 </li>
                 <li>
-                    <a href="#currentStatus"><span class="hover-line">Current Status</span></a>
+                    <a class="nav-link" onclick="goTo('currentStatus')"><span class="hover-line">Current Status</span></a>
                 </li>
             </ul>
         </div>
