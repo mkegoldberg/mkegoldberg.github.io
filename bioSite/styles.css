@@ -114,9 +114,6 @@ footer {
     opacity: 0;
     animation: fade-in-left ease-out .8s forwards; 
 }
-#timeline .container {
-    text-align: center;
-}
 #images .container {
     display: flex;
     justify-content: center;
