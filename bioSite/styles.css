@@ -176,7 +176,7 @@ footer {
 }
 /* Place the container to the left */
 .left {
-    left: 0px;
+    left: -81px;
 }
 
 /* Place the container to the right */
@@ -341,7 +341,8 @@ footer {
         left: 15px;
     }
     /* Make all right containers behave like the left ones */
-    .right {
+    .right,
+    .left {
         left: 0%;
     }
     footer {
