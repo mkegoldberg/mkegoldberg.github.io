@@ -100,6 +100,7 @@ footer {
 .main-nav li a {
     text-decoration: none;
     padding: 10px 15px;
+    cursor: pointer;
 }
 .title-area .row {
     display: flex;
@@ -135,7 +136,7 @@ footer {
     font-weight: 700;
 }
 .bodyText p {
-    text-align: left;
+    text-align: justify;
 }
 
 /**** TIMELINE ****/
@@ -353,5 +354,11 @@ footer {
 @media screen and (min-width: 625px) and (max-width: 1023px){
     .main-nav {
         width: 55%;
+    }
+    .tl-container{
+        width: 40%;
+    }
+    .left {
+        left: -11px
     }
 }
