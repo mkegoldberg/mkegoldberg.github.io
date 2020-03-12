@@ -9,28 +9,37 @@
     <meta http-equiv="pragma" content="no-cache">
 
     <link href="css/portfolio.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07e3d9dfa7.js" crossorigin="anonymous"></script>
 </head>
 <html>
 <body>
     <section class="hero">
-        <div class="flex flex-row container">
-            <div class="flex md:w-1/2 items-center">
-                <div>
-                    <h1 class="title text-white whitespace-no-wrap">
-                        Hi,<br class="hidden md-inline">
-                        I'm Mike <span class="hidden lg:inline">
-                            Goldberg.
-                        </span>
-                    </h1>
-                </div>
+      <div class="container">
+        <div class="flex flex-row container space-around">
+            <div class="flex items-center justify-center">
+                  <h1 class="title hide-on-small">
+                      Hi,<br>
+                      I'm Mike
+                      <span>
+                          Goldberg.
+                      </span>
+                  </h1>
+                  <h1 class="title show-on-small">
+                    Hi, I'm Mike
+                  </h1>
             </div>
             <div class="img-container">
                 <img src="img/dev.png" class="hero-img">
             </div>
         </div>
+      </div>
     </section>
-    <section class="tag-line text-center container">
-        <span>Front End Developer. </span> <span>Driven by passion. </span> <span>Fueled by coffee.</span>
+    <section class="tag-line container">
+      <div class="text-center">
+        <span>Front End Developer. </span>
+        <span>Driven by passion. </span>
+        <span>Fueled by coffee.</span>
+      </div>
     </section>
     <section class="about-me">
         <div class="container">
@@ -39,31 +48,28 @@
             </h3>
             <div class="icon-row flex flex-row">
                 <div class="text-center">
-                    <font-awesome-layers class="text-10xl hover:text-red">
-                        <font-awesome-icon icon="['fas', 'circle']" />
-                        <font-awesome-icon icon="['fas', 'paint-brush']" class="text-red hover:text-white"
-                            transform="shrink-8" />
-                    </font-awesome-layers>
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-paint-brush fa-stack-1x text-red"></i>
+                    </span>
                     <div class="icon-title">
                         I Design
                     </div>
                 </div>
                 <div class="text-center">
-                    <font-awesome-layers class="text-10xl hover:text-red">
-                        <font-awesome-icon icon="[&quot;fas&quot;, &quot;circle&quot;]" />
-                        <font-awesome-icon icon="[&quot;fas&quot;, &quot;code&quot;]"
-                            class="text-red code-icon hover:text-white" transform="shrink-8" />
-                    </font-awesome-layers>
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-code fa-stack-1x text-red"></i>
+                    </span>
                     <div class="icon-title font-medium pt-4">
                         I Develop
                     </div>
                 </div>
                 <div class="text-center">
-                    <font-awesome-layers class="text-10xl hover:text-red">
-                        <font-awesome-icon icon="[&quot;fas&quot;, &quot;circle&quot;]" />
-                        <font-awesome-icon icon="['fas', 'address-book']" class="text-red hover:text-white"
-                            transform="shrink-8" />
-                    </font-awesome-layers>
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-address-book fa-stack-1x text-red"></i>
+                    </span>
                     <div class="icon-title">
                         Let's Connect
                     </div>
@@ -85,9 +91,21 @@
             <h3 class="text-center">
                 My Projects
             </h3>
-            <div class="gallery-container">
-                <!-- <div class="md:w-1/3 p-4"> -->
+            <div class="flex flex-column space-around">
+                <div class="gallery-container">
                     <div class="exp-img text-center">
+                        <a href="https://mkegoldberg.github.io/bioSite/">
+                            <img src="img/bio.png" :alt="Bio Site" class="grow">
+                        </a>
+                        <div>Bio Site</div>
+                    </div>
+                    <div class="exp-img text-center">
+                        <a href="#">
+                            <img src="img/bio-proto.png" :alt="Bio Site Prototype" class="grow">
+                        </a>
+                        <div>Bio Site Prototype</div>
+                    </div>
+                    <!-- <div class="exp-img text-center">
                         <a href="item.path">
                             <img src="https://via.placeholder.com/330" :alt="item.title" class="grow">
                         </a>
@@ -101,23 +119,13 @@
                         <a href="item.path">
                             <img src="https://via.placeholder.com/330" :alt="item.title" class="grow">
                         </a>
-                    </div>
-                    <div class="exp-img text-center">
-                        <a href="item.path">
-                            <img src="https://via.placeholder.com/330" :alt="item.title" class="grow">
-                        </a>
-                    </div>
-                    <div class="exp-img text-center">
-                        <a href="item.path">
-                            <img src="https://via.placeholder.com/330" :alt="item.title" class="grow">
-                        </a>
-                    </div>
-                <!-- </div> -->
+                    </div> -->
+                </div>
             </div>
         </div>
     </section>
     <footer class="text-center">
-        &copy;{{ currentYear }} mkegoldberg.github.io | all rights reserved
+        &copy;2020 mkegoldberg.github.io | all rights reserved
     </footer>
 </body>
 </html>
