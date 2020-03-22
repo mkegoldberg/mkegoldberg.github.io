@@ -13,6 +13,55 @@
 </head>
 <html>
 <body>
+  <!-- modal -->
+  <div class="overlay"></div>
+  <div class="popup-modal" data-popup-modal="one">
+    <i class="fas fa-2x fa-times popup-modal__close"></i>
+    <h1 class="font-weight-bold">
+      I Design
+    </h1>
+    <p>
+      From the doodles on my notes in highschool to the pixel perfect vector files I create in Adobe Illustrator, I find comfort in a well laid out and visually balanced design. My experiences have allowed me to better understand the balance between business goals and the user’s needs.  Working with a bevy of teams and campaigns have refined
+      my methodology in crafting clear and concise messages. My aim is to dovetail those skills with the UX design concepts to go full-circle in crafting experiences for companies and their products I have the pleasure in joining.
+    </p>
+  </div>
+
+  <div class="popup-modal" data-popup-modal="two">
+    <i class="fas fa-2x fa-times popup-modal__close"></i>
+    <h1 class="font-weight-bold">
+      I Develop
+    </h1>
+    <p>
+      This is where my true passion lies. Though its early in my career, I have a goal every morning I wake up: To be a better developer today than I was yesterday. The bulk of my experience has been in javascript, however I'm always open for opportunities to learn new language platforms and frameworks. Things are always changing, and that is what makes it exciting.
+    </p>
+  </div>
+  <div class="popup-modal" data-popup-modal="three">
+    <i class="fas fa-2x fa-times popup-modal__close"></i>
+    <h1 class="font-weight-bold">
+      Lets Connect!
+    </h1>
+    <ul>
+      <li>
+        <a href="mailto:mikedgoldberg@gmail.com">
+          <i class="fas fa-envelope"></i>
+          <span>mikedgoldberg@gmail.com</span>
+        </a>
+      </li>
+      <li>
+        <a href="tel:858-935-4840">
+          <i class="fas fa-phone"></i>
+          <span>760-521-8332</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mkegold/">
+          <i class="fab fa-linkedin"></i>
+          <span>@mkegold</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
     <section class="hero">
       <div class="container">
         <div class="flex flex-row container space-around">
@@ -48,7 +97,7 @@
             </h3>
             <div class="icon-row flex flex-row">
                 <div class="text-center">
-                    <span class="fa-stack fa-2x">
+                    <span class="fa-stack fa-2x popup-trigger" data-popup-trigger="one">
                       <i class="fas fa-circle fa-stack-2x"></i>
                       <i class="fas fa-paint-brush fa-stack-1x text-red"></i>
                     </span>
@@ -57,7 +106,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <span class="fa-stack fa-2x">
+                    <span class="fa-stack fa-2x popup-trigger" data-popup-trigger="two">
                       <i class="fas fa-circle fa-stack-2x"></i>
                       <i class="fas fa-code fa-stack-1x text-red"></i>
                     </span>
@@ -66,7 +115,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <span class="fa-stack fa-2x">
+                    <span class="fa-stack fa-2x popup-trigger" data-popup-trigger="three">
                       <i class="fas fa-circle fa-stack-2x"></i>
                       <i class="fas fa-address-book fa-stack-1x text-red"></i>
                     </span>
@@ -130,6 +179,8 @@
     <footer class="text-center">
         &copy;2020 mkegoldberg.github.io | all rights reserved
     </footer>
+    <!-- import javascript -->
+    <script src="js/portfolio.js"></script>
 </body>
 </html>
 

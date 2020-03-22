@@ -5,12 +5,22 @@ body {
   color: #333;
   font-size: 1rem;
   margin: 0;
+  position: relative;
 }
 h3 {
   font-size: 2.25rem;
   font-weight: 400;
   padding-bottom: 1.5rem;
   text-align: center;
+}
+a {
+  text-decoration: none;
+  color: slategrey;
+  font-size: 1rem;
+  transition: color .2s;
+}
+a:hover {
+  color: #ff735c;
 }
 
 /* utilities */
@@ -37,22 +47,21 @@ h3 {
 .hero{
   background-color: #ff735c;
   color: #fff;
+  position: relative;
 }
 .hero:after {
   background: inherit;
   content: '';
   display: block;
-  height: 50%;
-  left: 0;
+  height: 565px;
   position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
   z-index: -1;
-  /* -webkit-backface-visibility: hidden; // for Chrome Windows */
-}
-.hero:after {
-  top: 158px;
   transform: skewY(2deg);
   transform-origin: 100% 0;
+  /* -webkit-backface-visibility: hidden; // for Chrome Windows */
 }
 .title {
   font-size: 4rem;
@@ -93,6 +102,16 @@ h3 {
 }
 .icon-row {
   justify-content: space-evenly;
+}
+.fa-stack .fa-circle,
+.fa-stack .text-red{
+  transition: color .2s ease-out;
+}
+.fa-stack:hover .fa-circle {
+  color: #ff735c;
+}
+.fa-stack:hover .text-red {
+  color: #fff;
 }
 .about-me .fa-stack {
   font-size: 3rem;
@@ -139,6 +158,64 @@ footer {
   color: #fff;
   padding: 2rem 0;
   text-align: center;
+}
+
+/* modal */
+.overlay {
+  position: fixed;
+  z-index: 900;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  display: none;
+}
+.overlay.is-blacked-out {
+  display: block;
+}
+.popup-modal {
+  height: 265px;
+  width: 650px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  position: absolute;
+  left: 50%;
+  top: 5em;
+  transform: translateX(-50%);
+  padding: 45px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+  z-index: 1000;
+}
+.popup-modal .fa-times {
+  float: right;
+  margin-top: -1rem;
+  color: #aeaeae;
+  font-size: 1.25rem;
+}
+.popup-modal ul {
+  list-style: none;
+  padding: 0;
+}
+.popup-modal ul li{
+  padding-bottom: .5rem;
+}
+.popup-modal li i {
+  margin-right: .35rem;
+}
+.popup-modal.is--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup-modal.__close {
+  position: absolute;
+  font-size: 1.2rem;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
 }
 
 /* Hero animation */
@@ -214,6 +291,14 @@ h1 {
     padding-left: .5rem;
     padding-right: .5rem;
   }
+  .popup-modal {
+    width: 74%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .hero:after {
+    height: 375px;
+  }
   .hero h1 {
     font-size: 3rem;
   }
@@ -223,9 +308,6 @@ h1 {
   .hero-img {
     max-width: 325px;
     max-height: 325px;
-}
-  .hero:after {
-    height: 28%;
   }
 }
 /* Small only */
@@ -239,6 +321,11 @@ h1 {
   }
   .show-on-small {
     display: initial;
+  }
+  .popup-modal {
+    width: 90%;
+    height: auto;
+    padding: 2rem 1rem;
   }
   .hero .flex-row {
     flex-direction: column-reverse;
