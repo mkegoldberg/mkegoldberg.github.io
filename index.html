@@ -83,6 +83,7 @@
         </div>
       </div>
     </section>
+
     <section class="tag-line container">
       <div class="text-center">
         <span>Front End Developer. </span>
@@ -90,7 +91,22 @@
         <span>Fueled by coffee.</span>
       </div>
     </section>
-    <section class="about-me">
+
+    <section class="main-nav container">
+      <div class="text-center flex">
+        <span>
+          <a onclick="goTo('about')">About Me</a>
+        </span>
+        <span>
+          <a onclick="goTo('gallery')">Project Gallery</a>
+        </span>
+        <span>
+          <a href="web-335/goldberg-diagrams.html">Diagrams</a>
+        </span>
+      </div>
+    </section>
+
+    <section id="about" class="about-me">
         <div class="container">
             <h3>
                 A Little About Me
@@ -135,7 +151,8 @@
             </p>
         </div>
     </section>
-    <section class="gallery">
+
+    <section id="gallery" class="gallery">
         <div class="container">
             <h3 class="text-center">
                 My Projects
@@ -176,9 +193,11 @@
             </div>
         </div>
     </section>
+
     <footer class="text-center">
         &copy;2020 mkegoldberg.github.io | all rights reserved
     </footer>
+
     <!-- import javascript -->
     <script src="js/portfolio.js"></script>
 </body>

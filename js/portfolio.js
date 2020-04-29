@@ -2,6 +2,10 @@ const modalTriggers = document.querySelectorAll('.popup-trigger');
 const modalCloseTrigger = document.querySelector('.popup-modal__close');
 const bodyBlackout = document.querySelector('.overlay');
 
+function goTo(section) {
+  document.getElementById(section).scrollIntoView({block: 'start', behavior: 'smooth' });
+}
+
 modalTriggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
     // get scroll position
