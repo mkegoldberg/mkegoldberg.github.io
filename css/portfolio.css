@@ -237,6 +237,18 @@ footer {
   top: -10px;
   cursor: pointer;
 }
+/* bootstrap modal */
+/* presentatin page */
+#restSlideshow .modal-content {
+  background: transparent;
+  border: none;
+}
+
+/* video */
+video {
+  max-width: 800px;
+  /* margin-left: -9rem; */
+}
 
 /* Hero animation */
 h1 {
@@ -329,6 +341,10 @@ h1 {
     max-width: 325px;
     max-height: 325px;
   }
+  video {
+    max-width: 700;
+    margin-left: -7.5rem;
+  }
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
@@ -376,5 +392,9 @@ h1 {
   .gallery-container {
     flex-wrap: nowrap;
     flex-direction: column;
+  }
+  video {
+    max-width: 400;
+    margin-left: -1.2rem;
   }
 }
