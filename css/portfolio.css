@@ -247,7 +247,7 @@ footer {
 /* video */
 video {
   max-width: 800px;
-  /* margin-left: -9rem; */
+  margin-left: -9rem;
 }
 
 /* Hero animation */
@@ -342,7 +342,7 @@ h1 {
     max-height: 325px;
   }
   video {
-    max-width: 700;
+    max-width: 700px;
     margin-left: -7.5rem;
   }
 }
@@ -394,7 +394,7 @@ h1 {
     flex-direction: column;
   }
   video {
-    max-width: 400;
+    max-width: 400px;
     margin-left: -1.2rem;
   }
 }
