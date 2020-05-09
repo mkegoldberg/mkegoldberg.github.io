@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  Goldberg Portfolio
+; Author: Mike Goldberg
+; Date:   May 2020
+; Description: JS for portfolio project
+;===========================================
+*/
+
 const modalTriggers = document.querySelectorAll('.popup-trigger');
 const modalCloseTrigger = document.querySelector('.popup-modal__close');
 const bodyBlackout = document.querySelector('.overlay');
