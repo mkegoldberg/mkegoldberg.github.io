@@ -239,7 +239,8 @@ footer {
 }
 /* bootstrap modal */
 /* presentatin page */
-#restSlideshow .modal-content {
+#restSlideshow .modal-content,
+#restSlideshowApi .modal-content {
   background: transparent;
   border: none;
 }
