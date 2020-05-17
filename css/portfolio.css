@@ -240,7 +240,8 @@ footer {
 /* bootstrap modal */
 /* presentatin page */
 #restSlideshow .modal-content,
-#restSlideshowApi .modal-content {
+#restSlideshowApi .modal-content,
+#soapSlideshowApi .modal-content {
   background: transparent;
   border: none;
 }
