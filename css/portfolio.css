@@ -46,6 +46,44 @@ a:hover {
 .justify-center { justify-content: center;}
 .space-around { justify-content: space-around;}
 
+/* dropdown */
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+.dropdown {
+  display: none;
+  opacity: 0;
+  width: 10rem;
+  padding: 0;
+  position: absolute;
+  bottom: -9rem;
+  left: -2px;
+  right: 0;
+  transition: opacity .2s ease-in-out;
+  text-align: left;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.dropdown-container:hover .dropdown {
+  display: block;
+  opacity: 1;
+}
+.dropdown li a{
+  display: block ;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: .75rem;
+  transition: all .2s ease-in;
+}
+.dropdown li:not(:last-child)  {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown li a:hover {
+  background: rgba(169, 188, 205,.3);
+}
+
 /* hero */
 .hero{
   background-color: #ff735c;
@@ -100,11 +138,25 @@ a:hover {
 .main-nav {
   padding-bottom: 2rem;
 }
-.main-nav > div {
+.main-nav ul {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-evenly;
+  list-style: none;
+  color: slategrey;
+  font-size: 1.5rem;
+  padding: 0;
+}
+.main-nav ul.dropdown {
+  margin: 0;
+}
+.main-nav ul.flex li,
+.main-nav ul.flex li a {
+  font-size: 1.5rem;
+}
+.main-nav ul.dropdown li a {
+  font-size: 1.25rem;
 }
 .main-nav a {
   transition: color .2s ease-in-out;
@@ -241,7 +293,8 @@ footer {
 /* presentatin page */
 #restSlideshow .modal-content,
 #restSlideshowApi .modal-content,
-#soapSlideshowApi .modal-content {
+#soapSlideshowApi .modal-content,
+#jsonSlideshowApi .modal-content {
   background: transparent;
   border: none;
 }
@@ -384,6 +437,18 @@ h1 {
   } */
   .tag-line div{
     flex-direction: column;
+  }
+  .main-nav ul.flex {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .main-nav ul.flex li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .dropdown {
+    bottom: -13.5rem;
   }
   .icon-row.flex-row{
     flex-direction: column;

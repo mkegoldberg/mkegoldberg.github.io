@@ -93,23 +93,25 @@
     </section>
 
     <section class="main-nav container">
-      <div class="text-center flex">
-        <span>
+      <ul class="text-center flex">
+        <li>
           <a onclick="goTo('about')">About Me</a>
-        </span>
-        <span>
+        </li>
+        <li>
           <a onclick="goTo('gallery')">Project Gallery</a>
-        </span>
-        <span>
+        </li>
+        <li>
           <a href="web-335/goldberg-diagrams.html">Diagrams</a>
-        </span>
-        <span>
-          <a href="web-420/goldberg-rest.html">REST Presentations</a>
-        </span>
-        <span>
-          <a href="web-420/goldberg-soap-apis.html">SOAP Presentations</a>
-        </span>
-      </div>
+        </li>
+        <li class="dropdown-container">
+          Presentations
+          <ul class="dropdown">
+            <li><a href="web-420/goldberg-rest.html">REST</a></li>
+            <li><a href="web-420/goldberg-soap-apis.html">SOAP</a></li>
+            <li><a href="web-420/goldberg-json-apis.html">JSON</a></li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <section id="about" class="about-me">
