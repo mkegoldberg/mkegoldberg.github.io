@@ -30,8 +30,7 @@ modalTriggers.forEach(trigger => {
 
     // prevent scrolling in the background
     const body = document.body;
-    // body.style.position = 'fixed';
-    body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
     body.style.top = `-${scrollPos}`;
 
     // close modal
