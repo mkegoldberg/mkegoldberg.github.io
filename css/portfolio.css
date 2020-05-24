@@ -154,6 +154,7 @@ a:hover {
 .main-nav ul.flex li,
 .main-nav ul.flex li a {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .main-nav ul.dropdown li a {
   font-size: 1.25rem;
