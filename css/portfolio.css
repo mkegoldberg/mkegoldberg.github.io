@@ -295,7 +295,8 @@ footer {
 #restSlideshow .modal-content,
 #restSlideshowApi .modal-content,
 #soapSlideshowApi .modal-content,
-#jsonSlideshowApi .modal-content {
+#jsonSlideshowApi .modal-content,
+#hypermediaSlideShow .modal-content {
   background: transparent;
   border: none;
 }
