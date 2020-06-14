@@ -291,11 +291,12 @@ footer {
   cursor: pointer;
 }
 /* bootstrap modal */
-/* presentatin page */
+/* presentation page */
 #restSlideshow .modal-content,
 #restSlideshowApi .modal-content,
 #soapSlideshowApi .modal-content,
 #jsonSlideshowApi .modal-content,
+#soaSlideshow .modal-content,
 #hypermediaSlideShow .modal-content {
   background: transparent;
   border: none;
