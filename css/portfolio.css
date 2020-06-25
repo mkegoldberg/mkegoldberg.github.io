@@ -57,7 +57,7 @@ a:hover {
   width: 10rem;
   padding: 0;
   position: absolute;
-  bottom: -15rem;
+  bottom: -18rem;
   left: -2px;
   right: 0;
   transition: opacity .2s ease-in-out;
@@ -298,6 +298,7 @@ footer {
 #jsonSlideshowApi .modal-content,
 #soaSlideshow .modal-content,
 #microSlideshow .modal-content,
+#oauthSlideshow .modal-content,
 #hypermediaSlideShow .modal-content {
   background: transparent;
   border: none;
