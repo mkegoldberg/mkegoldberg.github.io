@@ -299,6 +299,7 @@ footer {
 #soaSlideshow .modal-content,
 #microSlideshow .modal-content,
 #oauthSlideshow .modal-content,
+#tvsSlideshow .modal-content,
 #hypermediaSlideShow .modal-content {
   background: transparent;
   border: none;
