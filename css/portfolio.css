@@ -301,6 +301,7 @@ footer {
 #oauthSlideshow .modal-content,
 #tvsSlideshow .modal-content,
 #pizzaSlideshow .modal-content,
+#testingSlideshow .modal-content,
 #hypermediaSlideShow .modal-content {
   background: transparent;
   border: none;
