@@ -237,15 +237,17 @@ footer {
 .overlay {
   position: fixed;
   z-index: 900;
+  display: none;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #333;
-  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.7)
 }
 .overlay.is-blacked-out {
-  display: block;
+  display: flex;
 }
 .popup-modal {
   height: 265px;
@@ -255,8 +257,8 @@ footer {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   position: absolute;
   left: 50%;
-  top: 5em;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding: 45px;
   opacity: 0;
   pointer-events: none;
@@ -314,7 +316,7 @@ video {
 }
 
 /* Hero animation */
-h1 {
+.hero h1 {
   opacity: 0;
   animation: fade-in-right ease-out .8s forwards;
 }
