@@ -293,18 +293,7 @@ footer {
   cursor: pointer;
 }
 /* bootstrap modal */
-/* presentation page */
-#restSlideshow .modal-content,
-#restSlideshowApi .modal-content,
-#soapSlideshowApi .modal-content,
-#jsonSlideshowApi .modal-content,
-#soaSlideshow .modal-content,
-#microSlideshow .modal-content,
-#oauthSlideshow .modal-content,
-#tvsSlideshow .modal-content,
-#pizzaSlideshow .modal-content,
-#testingSlideshow .modal-content,
-#hypermediaSlideShow .modal-content {
+.modal-content.slideshow {
   background: transparent;
   border: none;
 }
